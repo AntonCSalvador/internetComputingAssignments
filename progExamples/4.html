@@ -1,0 +1,85 @@
+<html>
+     <head>
+          <title>JS FNCS</title>
+          
+          <script>
+               function palindrome(){
+                    var ja = document.getElementById("inputValue").value;
+                    //console.log(ja);
+                    console.log(ja == ja.split("").reverse().join(""));
+                                   if(ja == ja.split("").reverse().join("")){
+                                        document.getElementById("output").innerHTML = "pog";
+                                   }
+                                   else{
+                                        //console.log("not");
+                                        document.getElementById("output").innerHTML = "not pog";
+
+                                                  }
+                    //console.log(document.getElementById("inputValue").value == document.getElementById("inputValue").value.split("").reverse().join(""));
+
+                    }
+
+               function sort(){
+                    var list = [];
+                    for(let i = 0; i < 50; i++){
+                         list[i] = Math.floor((Math.random() * 100) + 1);
+                         
+                    }
+                    
+                    document.write(list);
+                    document.write('<br>'); 
+                    //when you do list sort make sure you specify, esp for numbers
+                    list.sort(function(a, b){return a-b});
+                    document.write(list); 
+                    
+               }
+
+               function checkAnagram(){
+                    var input1 = document.getElementById("anagram").value;
+                    var input2 = document.getElementById("anagram2").value;
+                    
+                    Array.from(input1).sort();
+                    Array.from(input2).sort();
+                                   if(input1 == input2){
+                                        document.getElementById("ana").innerHTML = "pogu";
+
+                                        console.log(input1);
+                                        console.log(input2);
+                                   }
+                                   else{
+                                        console.log("not worked");
+                                        console.log("jajaa");
+
+                                        console.log(input1);
+                                        console.log(input2);
+
+                                   }
+
+                    //document.getElementById("ana").innerHTML = "pogu";
+               }
+
+          </script>
+     </head>
+
+     <body>
+          <input type="text" id="inputValue">
+          <input type="button" value="Check If Palindrome" onClick="palindrome()">
+          <p id="output">tt</p>
+          <br>
+          <br>
+
+          <input type="text" id="beSorted">
+          <input type="button" value="SORT" onClick="sort()">
+          <br>
+          <br>
+          
+          <input type="text" id="anagram">
+          <input type="text" id="anagram2">
+
+          <input type="button" value="CHECK ANAGRAM" onClick="checkAnagram()">
+          <p id="ana">hello</p>
+
+
+     </body>
+
+</html>

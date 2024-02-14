@@ -1,0 +1,58 @@
+LAMP STACK
+Linux
+Apache
+MySQL
+PHP
+
+Linux commands poggers bruh:
+command   -options   args
+ls -l [fileName]
+know
+grep (global regular expression point)
+chmod
+cp
+
+
+4 - r
+2 - w
+1 - x (execute)
+660
+read write read write NONE
+
+EX: chmod 600 index.html would change the permissions and people cant see it now
+
+604 is probably ideal with chmod 604 index.html
+
+EVERYTHING IN PUBLIC-HTML IS WHATS SHOWN I THINK like cise.ufl.edu/~aritzhaupt/assign1/
+
+-------------------
+3 TIER ARCHITECTURE:
+Client -> Server -> Database
+       <-        <-
+Client:
+  t
+Server:
+  Business logic
+  PHP
+  ASP
+  JSP
+  ColdFusion
+     These are actually for implementing code(?)
+Database:
+  MySQL
+  PostGRESQL
+  DD2
+  Oracle
+
+COMMAND TO RUN THE SERVER 
+ssh antonsalvador@storm.cise.ufl.edu
+ls
+
+
+
+
+to get into my bash scripts its nvim ~/.bashrc
+
+
+
+

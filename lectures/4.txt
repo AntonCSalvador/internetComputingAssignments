@@ -1,0 +1,10 @@
+decision trees?
+
+squrare is start/finish
+o is connector
+trapezoid is I/O operation
+rectangle is process
+diamodn is decision which prob leads to T or F
+
+
+

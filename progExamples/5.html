@@ -1,0 +1,53 @@
+<html>
+<head>
+<script>
+
+     //.split returns all values of the array
+
+     function findN(x){
+          return x.length;
+
+     }
+
+     function findSum(x){
+          var sum = 0;
+               //look at difference between var and let
+               //something with scoping
+          for(let i = 0; i < x.length; i++){
+               sum += x[i];
+          }
+          return sum;
+     }
+
+     function findMean(x){
+          return findSum(x)/findN(x);
+     }
+
+     function getStatistics(){
+          var numList = document.getElementById("nums").value;
+          var numStr = numList.split(',');
+          var nums = [];
+          for(let i = 0; i < numStr.length; i++){
+               nums[i] = parseInt(numStr[i]);
+               console.log("for loop " + i);
+          }
+          document.getElementById('num').innerHTML = 'N: ' + findN(nums);
+          document.getElementById('sum').innerHTML = 'Sum: ' + findSum(nums);
+          document.getElementById('mean').innerHTML = 'Mean: ' + findMean(nums);
+
+     }
+</script>
+</head>
+
+<body>    
+     <textarea cols='10' rows='5' id='nums'>...</textarea>
+     <input type='button' value="Get Statistics" onClick="getStatistics()"> 
+     <p id='num'>N:</p> 
+     <p id='sum'>Sum:</p> 
+     <p id='mean'>Mean:</p> 
+     
+     
+</body>
+
+
+</html>

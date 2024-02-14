@@ -1,0 +1,56 @@
+-rwx --- r--
+user 
+7 is everything
+like 700 means user has everything
+     ACCESS DENIED
+
+704 is good 
+
+WORLDE grep example
+     grep [^qwert] 
+     ^ means not
+
+RELATIVE VS ABSOLUTE PATH:
+     jajajajajaja 
+
+Tim BErners-Lee invents mark up language and the WWW
+Grace Hopper made first compiler
+
+HTML ignores white space bru
+     jajajaja
+     like when i tried to indent
+
+TAG OVERVIEW;
+<p></p> PARAGRAPH, also puts a natural line break
+<h1></h1> HEADER with h1 -> h6
+<br> linebreak
+<hr> horizontal l
+<i></i> italics <b></b> bold
+
+<ol>
+     <li>
+     <li>
+</ol>    
+
+<ol>
+     <li>
+     <li>
+</ol>    
+
+<table border="1">
+     <tr> <!--table row-->
+          <td>x</td><td>Y</td> <!--TABLE DATA-->
+     </tr>
+     <tr>
+          <td>A</td><td>B</td>
+     </tr>
+</table>
+
+
+THE TAG <pre>...</pre> is to account for white space if I want to
+
+
+
+
+
+

@@ -1,0 +1,110 @@
+<html>
+<head>
+	<title>Assessment 1</title>
+
+	<script>
+		function processData(){
+			//var output = "";
+			var link = '<a href="https://www.cise.ufl.edu/~antonsalvador/cis4930/assign1/">Click here for more info</a>';
+			var victory = document.getElementById("victory").value;
+			if(victory == "Victory Royale"){
+				console.log("VICTORY ROYALE");
+                    		//document.getElementById("answer1").innerHTML = "CORRECT! A win in Fortnite is called a Victory Royale! " + link;
+				document.getElementById("answer1").innerHTML = "CORRECT! A win in Fortnite is called a Victory Royale! " + link;
+			}
+			else{
+				console.log("wrong");
+			     document.getElementById("answer1").textContent = "WRONG! When a player wins in Fortnite it is callled a 'Victory Royale'. Better luck next time bot!";
+
+               }
+
+               var rarities = document.getElementById("rarities").value;
+			if(rarities == 6){
+				console.log("Correct");
+                    document.getElementById("answer2").textContent = "CORRECT! There are 6 rarities in Fortnite. Common, Uncommon, Rare, Epic, Legendary, and Mythic.";
+			}
+			else{
+				console.log("wrong");
+			     document.getElementById("answer2").textContent = "WRONG! There are 6 rarities in Fortnite. Common, Uncommon, Rare, Epic, Legendary, and Mythic.";
+
+               }
+
+			var victoryRoyale = document.getElementById("vehicle").value;
+			//console.log(victoryRoyale);
+			if(victoryRoyale == "Battle Bus"){
+				console.log(victoryRoyale);
+                    document.getElementById("answer3").textContent = "CORRECT! The bus that takes players across the Fortnite map is always called the 'Battle Bus'";
+
+			}
+			else{
+				console.log("WRONG NOT BATTLE BUS");
+				console.log(victoryRoyale);
+			     document.getElementById("answer3").textContent = "WRONG. The Vehicle that takes players across the map is called the Battle Bus";
+ 
+               }
+
+               var medallion = document.getElementById("medallion");
+	          if(medallion.value == "Lavish Lair" || medallion.value == "Snooty Steppes"){ 
+                    console.log(medallion);
+		          document.getElementById("answer4").textContent = "CORRECT! You said " + medallion.value + " . All of the medallion locations are: Lavish Lair, Snooty Steppes, Fencing Fields, Reckless Railways, and Grand Glacier.";
+               }
+               else if(medallion.value == "Fencing Fields" || medallion.value == "Reckless Railways"){
+                    console.log(medallion.value);
+                    document.getElementById("answer4").textContent = "CORRECT! You said " + medallion.value + " . All of the medallion locations are: Lavish Lair, Snooty Steppes, Fencing Fields, Reckless Railways, and Grand Glacier.";
+
+               }
+               else if(medallion.value == "Grand Glacier"){
+                    console.log(medallion.value);
+                    document.getElementById("answer4").textContent = "CORRECT! You said " + medallion.value + " . All of the medallion locations are: Lavish Lair, Snooty Steppes, Fencing Fields, Reckless Railways, and Grand Glacier.";
+
+               }
+               else{
+                    document.getElementById("answer4").textContent = "WRONG! You said " + medallion.value + " . All of the medallion locations are: Lavish Lair, Snooty Steppes, Fencing Fields, Reckless Railways, and Grand Glacier.";
+
+               }
+     
+          } 
+	</script>
+	
+
+</head>
+<body>
+     <h1>ASSESSMENT 1: FORTNITE 101</h1>
+     <h2>Questions:</h2>
+     <table>
+		<tr>
+			<td>1. What is a win called in Fortnite?</td><td><input type="text" id="victory"></td>
+		</tr>
+		
+		<tr>
+			<td>2. How many loot rarities are in Fortnite?</td><td><input type="text" id="rarities"></td>
+		</tr>
+
+		<tr>
+			<td>3. What is the vehicle called to get onto the Fortnite Island?</td><td><input type="text" id="vehicle"></td>
+		</tr>
+
+		<tr>
+			<td>4. Name 1 location that has a medallion.</td><td><input type="text" id="medallion"></td>
+		</tr>
+
+		<tr>
+			<td><input type="button" value="Process" onClick="processData()"</td>	
+		</tr>
+
+	</table>	
+
+     <h2>Answers:</h2>
+     <ol>
+          <li id="answer1"></li>
+          <li id="answer2"></li>
+          <li id="answer3"></li>
+          <li id="answer4"></li>
+     </ol>
+
+
+
+</body>
+
+
+</html>

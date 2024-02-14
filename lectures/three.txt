@@ -1,0 +1,14 @@
+CSS
+1. INLINE
+2. EMBEDDED
+3. EXTERNAL
+
+
+CSS general format:
+selector{
+     property: value;
+}
+ex:
+     p{
+          color: blue;
+     }

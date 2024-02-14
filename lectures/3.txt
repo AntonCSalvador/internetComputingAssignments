@@ -1,0 +1,58 @@
+CSS
+
+3 WAYS TO LINK CSS
+
+1. External:
+<link rel="stylesheet" href="style.css">
+
+2. Internal (Embedded):
+<style>...</style>
+
+3. Inline
+
+<tag style="css goes here">
+
+Textbox
+<input type="text">
+
+Radio Button
+<input type="radio">
+
+Check Box
+<input type="check">
+
+Attributes To IDENTIFY:
+name
+id
+     usually these two are the same
+
+WE READ BETTER ON SCREENS WITH A SANS SERIFF FONT
+     Tahoma, etc.
+
+On paper, its better with serif font
+
+In HEXCOLOR:
+#FF0000
+First 2 are Red, NExt 2 are Green, 3rd 2 are Blue
+
+A7 in base10 is 167
+
+rgb(255, 255, 255)
+
+#0000FF is blue
+
+#FFFFFF is white
+
+#000000 is black
+     absence of all color is black
+     
+#AAAAAA is grey
+
+rgb(255,255,255,0.1)
+     the 0.1 is transparency
+
+on input types you can add onClick="functionName()" and put that in the javascript to do stuff like alert or getElementById and so on
+     EX:
+          <input type="button" value="Process" onClick="processData()">
+
+span is just div but auto inline i think
